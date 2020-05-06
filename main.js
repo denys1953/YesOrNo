@@ -1,11 +1,9 @@
 let par = document.getElementById('par')
 let inp = document.getElementById('inp')
 let arr = ['Yes', 'No'];
-let array = [];
 document.onclick = function() {
-  array.push(inp.value);
   setTimeout(function() {
-    if (array.length-1 == '?') {
+    if (inp.value.length-1 == '?') {
       let rand = arr[Math.floor(Math.random()*arr.length)];
       par.innerHTML = rand;
     } else {
